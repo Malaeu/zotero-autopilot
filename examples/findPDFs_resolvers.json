@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Sci-Hub (sci-hub.ee, iframe)",
+    "method": "GET",
+    "url": "https://sci-hub.ee/{doi}",
+    "mode": "html",
+    "selector": "iframe",
+    "attribute": "src",
+    "automatic": true
+  },
+  {
+    "name": "Sci-Hub (sci-hub.ee, legacy #pdf)",
+    "method": "GET",
+    "url": "https://sci-hub.ee/{doi}",
+    "mode": "html",
+    "selector": "#pdf",
+    "attribute": "src",
+    "automatic": true
+  },
+  {
+    "name": "Unpaywall (alle OA-Orte)",
+    "method": "GET",
+    "url": "https://api.unpaywall.org/v2/{doi}?email=you@example.org",
+    "mode": "json",
+    "selector": ".oa_locations",
+    "mappings": { "url": "url_for_pdf", "pageURL": "url_for_landing_page" },
+    "automatic": true
+  }
+]
