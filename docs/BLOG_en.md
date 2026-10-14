@@ -93,7 +93,7 @@ curl -s -o /dev/null -w "%{http_code}\n" -A "Mozilla/5.0 (X11; Linux x86_64; rv:
 The resolver request does not set its own agent, so only the global Gecko setting helps. Both edits go into the profile's `prefs.js` while Zotero is closed (Linux: `~/.zotero/zotero/<profile>/prefs.js`; macOS: `~/Library/Application Support/Zotero/Profiles/<profile>/prefs.js`):
 
 ```js
-user_pref("extensions.zotero.findPDFs.resolvers", "[{\"name\":\"Sci-Hub (iframe)\",\"method\":\"GET\",\"url\":\"https://sci-hub.ee/{doi}\",\"mode\":\"html\",\"selector\":\"iframe\",\"attribute\":\"src\",\"automatic\":true},{\"name\":\"Unpaywall all locations\",\"method\":\"GET\",\"url\":\"https://api.unpaywall.org/v2/{doi}?email=you@example.org\",\"mode\":\"json\",\"selector\":\".oa_locations\",\"mappings\":{\"url\":\"url_for_pdf\",\"pageURL\":\"url_for_landing_page\"},\"automatic\":true}]");
+user_pref("extensions.zotero.findPDFs.resolvers", "[{\"name\":\"Sci-Hub (iframe)\",\"method\":\"GET\",\"url\":\"https://sci-hub.ee/{doi}\",\"mode\":\"html\",\"selector\":\"iframe\",\"attribute\":\"src\",\"automatic\":true},{\"name\":\"Unpaywall all locations\",\"method\":\"GET\",\"url\":\"https://api.unpaywall.org/v2/{doi}?email=nodp53@gmail.com\",\"mode\":\"json\",\"selector\":\".oa_locations\",\"mappings\":{\"url\":\"url_for_pdf\",\"pageURL\":\"url_for_landing_page\"},\"automatic\":true}]");
 user_pref("general.useragent.override", "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0");
 ```
 

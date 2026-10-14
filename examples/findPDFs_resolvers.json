@@ -20,7 +20,7 @@
   {
     "name": "Unpaywall (alle OA-Orte)",
     "method": "GET",
-    "url": "https://api.unpaywall.org/v2/{doi}?email=you@example.org",
+    "url": "https://api.unpaywall.org/v2/{doi}?email=nodp53@gmail.com",
     "mode": "json",
     "selector": ".oa_locations",
     "mappings": { "url": "url_for_pdf", "pageURL": "url_for_landing_page" },
